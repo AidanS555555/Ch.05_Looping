@@ -14,7 +14,6 @@ coin_side= random.randint(0,1)
 
 for i in range(50):
     coin_side = random.randint(0, 1)
-    print(coin_side)
     if coin_side==1:
         print("The coin landed on heads")
         x+=1

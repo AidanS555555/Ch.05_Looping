@@ -19,14 +19,8 @@ scissors=3
 b=0
 
 for i in range(500):
-    quit = str(input("Do you want to quit? (y/n)"))
-    if quit == y:
-        b += 1
-    if b==1:
-        print("You are done")
-        break
-    print("1 equals rock, 2 equals papaer, 3 equals scissors")
-    choice=int(input("Enter a number between 1 and 3"))
+    print("1 equals rock, 2 equals papaer, 3 equals scissors, 4 equals quit")
+    choice=int(input("Enter a number between 1 and 4"))
     compchoice=random.randint(1,3)
     if choice==compchoice:
         print("It's a tie")
@@ -48,6 +42,10 @@ for i in range(500):
     elif choice==3 and compchoice==1:
         print("You lose")
         y+=1
+    else:
+        print("You have quit")
+        print("Win/loss record:",x,y)
+        break
 
 
 
