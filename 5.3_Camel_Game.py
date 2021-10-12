@@ -4,6 +4,7 @@ CAMEL GAME
 The pseudo-code for how to code this game is in Chapter 5 of the Python Jedi book
 
 '''
+import random
 y=0
 b=0
 x=-20
@@ -26,18 +27,18 @@ print()
 print()
 done=False
 while done==False:
-    quit=str(input("Do you want to leave Aang and his friends(y/n)"))
-    if quit.lower()=="y":
-        print("Goodbye")
-        break
-    if quit.lower()=="n":
-        print("You may continue")
     print("Should Aang:")
     print("A.Keep flying")
     print("B.Find a place to rest")
     print("C.Fight the machine")
     print("D.Fly Faster")
     print("E.Status Check")
+    print("F.Quit")
+    rest_spot=random.randint(1,20)
+    if rest_spot==15:
+        print("Appa has found a place where Azula can't catch them. They rest, but Azula is still on the move.")
+        b=0
+        x+=1
     choice=str(input("What should Aang like do?"))
     if choice.lower()=="c":
         print("Aang has lost against Azula. Game over")
@@ -56,10 +57,13 @@ while done==False:
         b=b+2
         x=x-3
         y=y+2
-    else:
+    elif choice.lower()=="e":
         print("Azula is", x, "miles behind")
         print("Appa's tiredness is at level", b)
         print("Aang has traveled", y, "miles")
+    else:
+        print("You have left Aang and his friends.")
+        break
     if x == 0:
         print("Azula has caught up to Aang. They have lost")
         break
