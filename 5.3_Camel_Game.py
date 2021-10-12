@@ -41,8 +41,13 @@ while done==False:
         x+=1
     choice=str(input("What should Aang like do?"))
     if choice.lower()=="c":
-        print("Aang has lost against Azula. Game over")
-        break
+        fight_now=random.randint(1,25)
+        if fight_now==17 or fight_now==3:
+            print("Aang has managed to defeat Azula")
+            break
+        else:
+            print("Aang has lost against Azula. Game over")
+            break
     elif choice.lower()=="a":
         print("Appa keeps flying. Azula is faster though.")
         b=b+1
@@ -79,7 +84,7 @@ while done==False:
         print("Meanwhile, Toph and Iroh share a cup of tea and some friendly advice")
         print("Zuko still tracks the machine.")
         continue
-    if y == 20:
+    if y == 30:
         print("All parties converge at an abandoned town. It is time for the avatar and company to fight Azula.")
         done=True
         y+=1
@@ -91,11 +96,11 @@ while done==False:
         print("Appa is getting dangerously tired.")
     if x>-6:
         print("Azula is getting very close.")
-if y == 20:
+if y == 30:
     print("Aang has arrived at an abandoned Earth Kingdom town. He sits and waits as Azula speaks.")
     print("Suddenly Zuko bursts through a rooftop, aiming his fists at both Aang and Azula")
     print("Azula fires at Zuko, knocking him back, and then turns to Aang.")
-while y == 21:
+while y == 31:
     for i in range(1):
         print("Aang has arrived at an abandoned Earth Kingdom town. He sits and waits as Azula speaks.")
         print("Suddenly Zuko bursts through a rooftop, aiming his fists at both Aang and Azula")
@@ -111,7 +116,7 @@ while y == 21:
     else:
         print("Aang helped Zuko up and they both corner Azula.")
         y+=1
-if y == 22:
+if y == 32:
     print("Katara, Toph, Iroh, and Sokka arrive and help Aang and Zuko back Azula into a corner.")
     print("Azula surrenders, but then attacks Iroh and escapes.")
     print("Iroh is in critical condition")
