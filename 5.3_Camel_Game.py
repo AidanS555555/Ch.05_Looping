@@ -60,7 +60,7 @@ while done==False:
     elif choice.lower()=="d":
         print("Appa has gained speed, but Appa is getting tired")
         b=b+2
-        x=x+3
+        x=x-3
         y=y+2
     elif choice.lower()=="e":
         print("Azula is", x, "miles behind")
