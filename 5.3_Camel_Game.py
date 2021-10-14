@@ -39,7 +39,7 @@ while done==False:
         print("Appa has found a place where Azula can't catch them. They rest, but Azula is still on the move.")
         b=0
         x+=1
-    choice=str(input("What should Aang like do?"))
+    choice=str(input("What should Aang do?"))
     if choice.lower()=="c":
         fight_now=random.randint(1,25)
         if fight_now==17:
