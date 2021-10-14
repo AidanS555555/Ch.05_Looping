@@ -37,8 +37,7 @@ print()
 while x>=0:
     print(x)
     x-=1
-if x==0:
-    print("Blast off!!!")
+print("Blast off!!!")
 
 
 

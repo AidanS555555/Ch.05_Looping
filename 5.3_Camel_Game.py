@@ -42,7 +42,7 @@ while done==False:
     choice=str(input("What should Aang like do?"))
     if choice.lower()=="c":
         fight_now=random.randint(1,25)
-        if fight_now==17 or fight_now==3:
+        if fight_now==17:
             print("Aang has managed to defeat Azula")
             break
         else:
