@@ -37,6 +37,9 @@ if instruct=="y":
     print()
     print("These are your choices. Enter a letter to enact a command.")
     print("Azula is 20 miles behind you, and Appa has ten levels of tiredness, so fly and rest carefully")
+    print("You have 40 miles until you can confront Azula")
+else:
+    print("Then play on.")
 done=False
 while done==False:
     print("Should Aang:")
