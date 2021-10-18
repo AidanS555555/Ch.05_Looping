@@ -25,6 +25,18 @@ print("The machine seems to be tracking them.")
 print("Meanwhile, Prince Zuko tracks the machine and his uncle Iroh travles on his own. ")
 print()
 print()
+instruct=str(input("Would you like intsructions. (y/n)"))
+if instruct=="y":
+    print("Should Aang:")
+    print("A.Keep flying")
+    print("B.Find a place to rest")
+    print("C.Fight the machine")
+    print("D.Fly Faster")
+    print("E.Status Check")
+    print("F.Quit")
+    print()
+    print("These are your choices. Enter a letter to enact a command.")
+    print("Azula is 20 miles behind you, and Appa has ten levels of tiredness, so fly and rest carefully")
 done=False
 while done==False:
     print("Should Aang:")
