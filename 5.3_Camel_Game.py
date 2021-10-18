@@ -35,7 +35,7 @@ while done==False:
     print("E.Status Check")
     print("F.Quit")
     rest_spot=random.randint(1,20)
-    if rest_spot==15:
+    if rest_spot==15 and x<0 and b<10 and y<40:
         print("Appa has found a place where Azula can't catch them. They rest, but Azula is still on the move.")
         b=0
         x+=1
@@ -84,7 +84,7 @@ while done==False:
         print("Meanwhile, Toph and Iroh share a cup of tea and some friendly advice")
         print("Zuko still tracks the machine.")
         continue
-    if y == 30:
+    if y == 40 and x<0 and b<10:
         print("All parties converge at an abandoned town. It is time for the avatar and company to fight Azula.")
         done=True
         y+=1
@@ -100,7 +100,7 @@ if y == 30:
     print("Aang has arrived at an abandoned Earth Kingdom town. He sits and waits as Azula speaks.")
     print("Suddenly Zuko bursts through a rooftop, aiming his fists at both Aang and Azula")
     print("Azula fires at Zuko, knocking him back, and then turns to Aang.")
-while y == 31:
+while y == 41:
     for i in range(1):
         print("Aang has arrived at an abandoned Earth Kingdom town. He sits and waits as Azula speaks.")
         print("Suddenly Zuko bursts through a rooftop, aiming his fists at both Aang and Azula")
@@ -116,7 +116,7 @@ while y == 31:
     else:
         print("Aang helped Zuko up and they both corner Azula.")
         y+=1
-if y == 32:
+if y == 42:
     print("Katara, Toph, Iroh, and Sokka arrive and help Aang and Zuko back Azula into a corner.")
     print("Azula surrenders, but then attacks Iroh and escapes.")
     print("Iroh is in critical condition")
