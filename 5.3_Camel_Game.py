@@ -94,7 +94,7 @@ while done==False:
         print("A falling out with Katara over responsiblities in the group caused Toph to go out on her own.")
         continue
     if y>14 and y<18:
-        print("Aang and frieneds discovered that Appa's shedding have been letting Azula track them.")
+        print("Aang and friends discovered that Appa's shedding have been letting Azula track them.")
         print("This leads Aang to split up with Sokka and Katara")
         print("Meanwhile, Toph and Iroh share a cup of tea and some friendly advice")
         print("Zuko still tracks the machine.")
